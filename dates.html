@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleBand.css">
+</head>
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border: black;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #dddddd;
+        text-align: center;
+    }
+
+    .custom-table {
+        width: 80%;
+        /* Sesuaikan lebar tabel sesuai kebutuhan */
+        margin: auto;
+        /* Agar tabel berada di tengah layar */
+        border-collapse: collapse;
+        /* Menggabungkan border antar sel */
+    }
+
+    .custom-table th,
+    .custom-table td {
+        border: 1px solid #ddd;
+        /* Atur border sel */
+        padding: 8px;
+        /* Atur padding pada sel */
+        text-align: center;
+        /* Atur align teks pada sel */
+    }
+
+    .custom-table th {
+        background-color: #ecb5ff;
+        /* Atur warna latar belakang header */
+    }
+
+    .info {
+        color: blue;
+        cursor: pointer;
+        font-size: 10px;
+    }
+</style>
+
+<body>
+    <div class="navbar" id="mynavbar">
+        <a class="logo" style="padding: 5px 20px 0px 20px">
+            <img src="https://seeklogo.com/images/U/ungu-logo-ECEA5976B5-seeklogo.com.png" alt="Logo">
+        </a>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">About
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="bio.html">Biographies</a>
+                <a href="pict.html">Picture</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Band News
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="dates.html">Tour Dates</a>
+                <a href="fans.html">Fans Discusion</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Discography
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="lyrics.html">Lyrics</a>
+                <a href="track.html">Sample Track</a>
+            </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="store.html">Store</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            &#9776;
+        </a>
+    </div>
+
+    <div>
+        <header>Tour Dates</header>
+        <table class="custom-table">
+            <tr>
+                <th width="50%">Date</th>
+                <th width="40%">Location</th>
+                <th>Info Ticket</th>
+            </tr>
+            <tr>
+                <td>8 Juli 2023</td>
+                <td>Pontianak, Kalimantan Barat</td>
+                <td class="info">Here</td>
+            </tr>
+            <tr>
+                <td>25 Juni 2023</td>
+                <td>Kemayoran, Jakarta</td>
+                <td class="info">Here</td>
+            </tr>
+            <tr>
+                <td>21 Juni 2023</td>
+                <td>Kebumen, Jawa Tengah</td>
+                <td class="info">Here</td>
+            </tr>
+            <tr>
+                <td>3 Juni 2023</td>
+                <td>Tanggerang, Banten</td>
+                <td class="info">Here</td>
+            </tr>
+            <tr>
+                <td>18 Maret 2023</td>
+                <td>Bengkulu, Sumatera Selatan</td>
+                <td class="info">Here</td>
+            </tr>
+            <tr>
+                <td>8 Maret 2023</td>
+                <td>Bengkel Space SVBD, Jakarta</td>
+                <td class="info">Here</td>
+            </tr>
+        </table>
+    </div> <br>
+
+    <script src="scriptUngu.js"></script>
+
+    <footer>
+        <div class="footer-content">
+            <p>Copyright &copy 2023 by Wadiiah Nurfadhilah</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/ungu_band/" target="_blank"><img src="asset/instagram.svg"></a>
+                <a href="https://twitter.com/UNGU_Tweet" target="_blank"><img src="asset/twitter.svg"></a>
+                <a href="https://www.tiktok.com/@ungu_band" target="_blank"><img src="asset/tiktok.svg"></a>
+                <a href="https://www.facebook.com/UNGUBand/" target="_blank"><img src="asset/facebook.svg"></a>
+            </div>
+        </div>
+    </footer>
+</body>

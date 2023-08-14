@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleBand.css">
+</head>
+
+<style>
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+
+  .container {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* When you mouse over the container, fade in the overlay title */
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+</style>
+
+<body>
+  <div class="navbar" id="mynavbar">
+    <a class="logo" style="padding: 5px 20px 0px 20px">
+      <img src="https://seeklogo.com/images/U/ungu-logo-ECEA5976B5-seeklogo.com.png" alt="Logo">
+    </a>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">About
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="bio.html">Biographies</a>
+        <a href="pict.html">Picture</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Band News
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="dates.html">Tour Dates</a>
+        <a href="fans.html">Fans Discusion</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Discography
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="lyrics.html">Lyrics</a>
+        <a href="track.html">Sample Track</a>
+      </div>
+    </div>
+    <a href="contact.html">Contact</a>
+    <a href="store.html">Store</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      &#9776;
+    </a>
+  </div>
+
+  <header>Picture of Ungu Band</header>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://th.bing.com/th/id/OIP.F6k-egWAZ1m47GXDuP7iDwHaEf?pid=ImgDet&rs=1">
+        <img src="https://th.bing.com/th/id/OIP.F6k-egWAZ1m47GXDuP7iDwHaEf?pid=ImgDet&rs=1" alt="Cinque Terre"
+          width="500" height="300">
+      </a>
+      <div class="overlay">Personel</div>
+    </div>
+  </div>
+
+
+  <div class="responsive" class="container">
+    <div class="gallery">
+      <div class="overlay">Personel</div>
+      <a target="_blank"
+        href="https://muftiyaturrohmah.files.wordpress.com/2012/09/288741_121610837935842_100002607799711_130916_233176_o.jpg">
+        <img
+          src="https://muftiyaturrohmah.files.wordpress.com/2012/09/288741_121610837935842_100002607799711_130916_233176_o.jpg"
+          alt="Forest" width="500" height="300">
+      </a>
+
+    </div>
+  </div>
+
+  <div class="responsive" class="container">
+    <div class="gallery">
+      <a target="_blank" href="https://indoungunatasha.weebly.com/uploads/2/1/2/5/21255288/8478659_orig.jpg">
+        <img src="https://indoungunatasha.weebly.com/uploads/2/1/2/5/21255288/8478659_orig.jpg" alt="Northern Lights"
+          width="500" height="300">
+      </a>
+      <div class="overlay">Personel</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://indoungunatasha.weebly.com/uploads/2/1/2/5/21255288/6330761_orig.jpg">
+        <img src="https://indoungunatasha.weebly.com/uploads/2/1/2/5/21255288/6330761_orig.jpg" alt="Mountains"
+          width="500" height="300">
+      </a>
+      <div class="overlay">Personel</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://th.bing.com/th/id/OIP.ojFbeuhX0MMHQAQ4P_LqWgHaDv?pid=ImgDet&w=800&h=405&rs=1">
+        <img src="https://th.bing.com/th/id/OIP.ojFbeuhX0MMHQAQ4P_LqWgHaDv?pid=ImgDet&w=800&h=405&rs=1" alt="Mountains"
+          width="500" height="300">
+      </a>
+      <div class="overlay">Personel</div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <script src="scriptUngu.js"></script>
+
+  <footer>
+    <div class="footer-content">
+      <p>Copyright &copy 2023 by Wadiiah Nurfadhilah</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/ungu_band/" target="_blank"><img src="asset/instagram.svg"></a>
+        <a href="https://twitter.com/UNGU_Tweet" target="_blank"><img src="asset/twitter.svg"></a>
+        <a href="https://www.tiktok.com/@ungu_band" target="_blank"><img src="asset/tiktok.svg"></a>
+        <a href="https://www.facebook.com/UNGUBand/" target="_blank"><img src="asset/facebook.svg"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>

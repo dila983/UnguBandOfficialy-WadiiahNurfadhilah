@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleBand.css">
+</head>
+
+<style>
+    /* Style the buttons inside the tab */
+    .tab button {
+        display: block;
+        background-color: inherit;
+        color: black;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+        background-color: #ddd;
+    }
+
+    /* Create an active/current "tab button" class */
+    .tab button.active {
+        background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+        float: left;
+        padding: 0px 12px;
+        border: 1px solid #ccc;
+        width: 70%;
+        border-left: none;
+        height: 1500px;
+        display: none;
+    }
+
+    /* Clear floats after the tab */
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .button:hover {
+        background-color: #c051d7;
+    }
+
+    .avatar-row {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: -5px;
+        /* Memberikan jarak negatif untuk menggantikan jarak pada avatar-container */
+    }
+
+    .avatar-container {
+        text-align: center;
+        flex-basis: 10%;
+        /* Mengatur ukuran flex-basis: calc(20% - 10px);dengan jarak 10px antar avatar */
+        margin: 20px;
+        /* Memberikan jarak pada setiap avatar */
+        box-sizing: border-box;
+    }
+
+    .avatar-circle {
+        size: 10px;
+        padding-top: 100%;
+        /* Menggunakan padding-top sebagai rasio aspek lingkaran */
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    .avatar-circle img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .avatar-text {
+        font-family: 'Damion', cursive;
+        color: #5B115C;
+        margin-top: 10px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .avatar-info {
+        position: relative;
+        display: inline-block;
+    }
+
+    .shape-container {
+        width: 100;
+        height: auto;
+        background-color: #E8BCF8;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+
+    .shape-content {
+        text-align: center;
+    }
+
+    .shape-container p {
+        margin: 0;
+    }
+</style>
+</head>
+
+<body>
+    <div class="navbar" id="mynavbar">
+        <a class="logo" style="padding: 5px 20px 0px 20px">
+            <img src="https://seeklogo.com/images/U/ungu-logo-ECEA5976B5-seeklogo.com.png" alt="Logo">
+        </a>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">About
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="bio.html">Biographies</a>
+                <a href="pict.html">Picture</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Band News
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="dates.html">Tour Dates</a>
+                <a href="fans.html">Fans Discusion</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Discography
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="lyrics.html">Lyrics</a>
+                <a href="track.html">Sample Track</a>
+            </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="store.html">Store</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            &#9776;
+        </a>
+    </div>
+
+
+    <div>
+        <header>Sejarah Ungu Band</header>
+        <p style="padding-left: 5%; padding-right: 5%;">Ungu terbentuk tahun 1996. Motor pembentuknya
+            adalah Ekky (gitar)
+            dan saat itu vokalisnya adalah Michael,
+            sedangkan drum dipegang oleh Pasha Van derr Krabb. Tahun 1997, saat Ungu hendak manggung, Pasha Van derr
+            Krabb menghilang dan posisinya digantikan oleh Rowman. Enda yang sebelumnya adalah roadies-nya Ekky juga
+            ikut bergabung dengan Ungu.
+            Tahun 2000, Ungu mulai mempersiapkan album pertama mereka, yang akhirnya dirilis 6 Juli 2002 bertajuk
+            Laguku.
+            Sebelumnya, Ungu ikut mengisi 2 lagu di album kompilasi Klik bersama Lakuna, Borneo, Piknik, dan Energy. Ke
+            dua
+            lagu tersebut adalah “Hasrat” dan “Bunga”. Single pertama album ini, “Bayang Semu” menjadi ost. sinetron ABG
+            (RCTI). Meski terbilang sukses, album ini baru mendapat Platinum Award setelah hampir 2 tahun album ini
+            dirilis. <br><br>
+            Saat hendak masuk dapur rekaman untuk album kedua, Ekky memutuskan keluar. Oncy yang saat itu baru keluar
+            dari
+            Funky Kopral dipilih untuk menggantikan Ekky. Album kedua Ungu Tempat Terindah dirilis Desember 2003. Album
+            ini
+            menjagokan “Karena Dia Kamu” sebagai single pertama dan “Suara Hati” dipilih sebagai single kedua. Baru
+            empat
+            bulan dirilis, penjualannya telah mencapai 80.000 (delapan puluh ribu) kopi. Jumlah yang cukup signifikan
+            jika
+            dibandingkan dengan album pertama yang telah mendapatkan platinum (150.000 kopi) dalam hitungan waktu satu
+            setengah tahun.
+            Ungu terbentuk tahun 1996. Motor pembentuknya adalah Ekky (gitar) dan saat itu vokalisnya adalah Michael,
+            sedangkan drum dipegang oleh Pasha Van derr Krabb. Tahun 1997, saat Ungu hendak manggung, Pasha Van derr
+            Krabb ‘menghilang’ dan posisinya digantikan oleh Rowman. Enda yang sebelumnya adalah roadies-nya Ekky juga
+            ikut bergabung dengan Ungu. <br><br>
+            Tahun 2000, Ungu mulai mempersiapkan album pertama mereka, yang akhirnya dirilis 6 Juli 2002 bertajuk
+            Laguku. Sebelumnya, Ungu ikut mengisi 2 lagu di album kompilasi Klik bersama Lakuna, Borneo, Piknik, dan
+            Energy. Ke dua lagu tersebut adalah “Hasrat” dan “Bunga”. Single pertama album ini, “Bayang Semu” menjadi
+            ost. sinetron ABG (RCTI). Meski terbilang sukses, album ini baru mendapat Platinum Award setelah hampir 2
+            tahun album ini dirilis.
+            Saat hendak masuk dapur rekaman untuk album kedua, Ekky memutuskan keluar. Oncy yang saat itu baru keluar
+            dari Funky Kopral dipilih untuk menggantikan Ekky. Album kedua Ungu Tempat Terindah dirilis Desember 2003.
+            Album ini menjagokan “Karena Dia Kamu” sebagai single pertama dan “Suara Hati” dipilih sebagai single kedua.
+            Baru empat bulan dirilis, penjualannya telah mencapai 80.000 (delapan puluh ribu) kopi. Jumlah yang cukup
+            signifikan jika dibandingkan dengan album pertama yang ‘telah’ mendapatkan platinum (150.000 kopi) dalam
+            hitungan waktu satu setengah tahun.
+
+        </p>
+        <header>Ingin lebih dalam kenal personal Ungu??
+            Yuk cekidot...
+        </header>
+    </div>
+
+    <div class="kotak-avatar" id="shape">
+        <div class="avatar-row">
+            <div class="avatar-container">
+                <div class="avatar-circle">
+                    <img src="https://th.bing.com/th/id/OIP.1s8-IIwfWgizHPXO3yBDjwHaI2?pid=ImgDet&rs=1"
+                        alt="Pict Pasha">
+                </div>
+                <div class="avatar-info">
+                    <p class="avatar-text" onclick="showShape()">Pasha</p>
+                </div>
+                <div class="shape-container">
+                    <div class="shape-content">
+                        <p>Nama lengkap : Sigit Purnomo Syamsuddin Said <br>
+                            Tempat lahir : Donggala, Sulawesi Selatan <br>
+                            Tanggal lahir : 27 November 1979 <br>
+                            Bergabung dengan Ungu : 1999 <br>
+                            Instrumen : Vokal
+                            Akun twitter : @PashaOfficial_</p>
+                    </div>
+                </div>
+            </div>
+            <div class="avatar-container">
+                <div class="avatar-circle">
+                    <img src="https://th.bing.com/th/id/OIP.ZmdsKUmNwf5YyilGHnBY9wHaF6?pid=ImgDet&rs=1" alt="Pict Enda">
+                </div>
+                <div class="avatar-info">
+                    <p class="avatar-text" onclick="showShape()">Enda</p>
+                </div>
+                <div class="shape-container">
+                    <div class="shape-content">
+                        <p>Nama lengkap : Sigit Purnomo Syamsuddin Said <br>
+                            Tempat lahir : Donggala, Sulawesi Selatan <br>
+                            Tanggal lahir : 27 November 1979 <br>
+                            Bergabung dengan Ungu : 1999 <br>
+                            Instrumen : Vokal
+                            Akun twitter : @PashaOfficial_</p>
+                    </div>
+                </div>
+            </div>
+            <div class="avatar-container">
+                <div class="avatar-circle">
+                    <img src="https://cdn.idntimes.com/content-images/community/2021/05/fromandroid-fc1003b97ffd90a248963473c6cbd46e.jpg"
+                        alt="Pict Rowman">
+                </div>
+                <p class="avatar-text">Rowman</p>
+            </div>
+            <div class="avatar-container">
+                <div class="avatar-circle">
+                    <img src="https://image.akurat.co/images/uploads/images/akurat_20181213124834_dpi23O.jpg"
+                        alt="Pict Oncy">
+                </div>
+                <p class="avatar-text">Oncy</p>
+            </div>
+            <div class="avatar-container">
+                <div class="avatar-circle">
+                    <img src="https://th.bing.com/th/id/OIP.k9V1WyhM1prMJth86WFfmwHaJQ?pid=ImgDet&rs=1"
+                        alt="Pict Mekki">
+                </div>
+                <p class="avatar-text">Mekki</p>
+            </div>
+        </div>
+
+        <script src="scriptUngu.js"></script>
+
+        <footer>
+            <div class="footer-content">
+                <p>Copyright &copy 2023 by Wadiiah Nurfadhilah</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/ungu_band/" target="_blank"><img src="asset/instagram.svg"></a>
+                    <a href="https://twitter.com/UNGU_Tweet" target="_blank"><img src="asset/twitter.svg"></a>
+                    <a href="https://www.tiktok.com/@ungu_band" target="_blank"><img src="asset/tiktok.svg"></a>
+                    <a href="https://www.facebook.com/UNGUBand/" target="_blank"><img src="asset/facebook.svg"></a>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
